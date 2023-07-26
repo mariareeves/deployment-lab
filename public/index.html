@@ -4,12 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Deployment Lab</title>
+    <style>
+        @layer utilities {
+            .custom-drop-shadow {
+                filter: drop-shadow(0px 20px 4px rgba(0, 0, 0, 0.25));
+                /* Replace the color here */
+            }
+        }
+    </style>
 </head>
 
-<body>
-    <h1>Adopt a puppy</h1>
-    <img src="https://puppygram.com/wp-content/uploads/2021/12/corgi-300x300-1-300x300.jpg" alt="puppy">
+<body class="container mx-auto shadow-md bg-emerald-100 ">
+
+    <h1 class="text-5xl font-bold leading-normal mt-4 mb-6 text-slate-800 text-center drop-shadow-xl text-gray-500">
+        Adopt a puppy
+    </h1>
+
+    <div class="flex justify-center">
+        <img src="https://puppygram.com/wp-content/uploads/2021/12/corgi-300x300-1-300x300.jpg"
+            class="w-200 h-200 py-10  custom-drop-shadow" alt="puppy">
+    </div>
+
+
+
+    <section class="text-center mx-auto my-20 p-10 tracking-wider font-medium leading-loose">"Welcome to Pawsome Pals
+        Adoption Agency!
+        Our website
+        is dedicated
+        to
+        finding
+        loving
+        homes for our furry
+        friends. With a simple and intuitive design, our mockup offers a seamless browsing experience for potential
+        adopters. Our homepage features heartwarming success stories and showcases adorable pets in need of forever
+        homes. With just a few clicks, visitors can easily explore our adoption process, view pet profiles, and access
+        valuable resources on pet care and training. Whether you're looking for a playful pup or a cuddly feline, our
+        comprehensive listings cater to various preferences and needs. Join us in our mission to create lasting bonds
+        between pets and their new families. Adopt, love, and cherish a Pawsome Pal today!"</section>
 </body>
 
 </html>
